@@ -1,10 +1,8 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IconContext } from "react-icons";
 import { useState } from "react";
-// import HeaderStyled from "./styled/Header.styled";
 import text from "@/utils/text";
 import { smoothScroll } from "@/utils/functions";
-// import { smoothScroll } from "../js/utils";
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
