@@ -7,7 +7,6 @@ import { smoothScroll } from "@/utils/functions";
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
     const listElements = [];
-    // const text = useLocalization().local;
 
     for (const [key, value] of Object.entries(text.header.nav)) {
         listElements.push(
@@ -15,11 +14,11 @@ const Header = () => {
                 <a
                     onClick={() => {
                         setShowMenu(!showMenu);
-                        // smoothScroll();
+                        smoothScroll();
                     }}
                     href={`#${key}`}
                 >
-                    {/* {value} */}
+                    {value}
                 </a>
             </li>
         );
