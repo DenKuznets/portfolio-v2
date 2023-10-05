@@ -1,5 +1,5 @@
-// import { RxHamburgerMenu } from "react-icons/rx";
-// import { IconContext } from "react-icons";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IconContext } from "react-icons";
 import { useState } from "react";
 // import HeaderStyled from "./styled/Header.styled";
 import text from "@/utils/text";
@@ -28,7 +28,7 @@ const Header = () => {
     }
 
     return (
-        <HeaderStyled>
+        <header>
             <div className="header">
                 <div className="header__logo">
                     <a href="#" onClick={() => smoothScroll()}>
@@ -60,7 +60,7 @@ const Header = () => {
                     </IconContext.Provider>
                 </nav>
             </div>
-        </HeaderStyled>
+        </header>
     );
 };
 
